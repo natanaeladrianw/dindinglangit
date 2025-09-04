@@ -1,0 +1,18 @@
+/* Lightweight responsive helpers across the app */
+@media (max-width: 991.98px) {
+  .table-responsive-md { overflow-x: auto; }
+}
+
+@media (max-width: 767.98px) {
+  .hide-sm { display: none !important; }
+  .btn-full-sm { width: 100% !important; }
+  .form-inline-sm > * { width: 100%; margin-bottom: 0.5rem; }
+}
+
+@media (max-width: 575.98px) {
+  .container-xxl { padding-left: 0.75rem; padding-right: 0.75rem; }
+  .card-body { padding: 1rem; }
+  .table thead th { font-size: 0.85rem; }
+  .table td { font-size: 0.85rem; }
+}
+

@@ -1,0 +1,18 @@
+@extends('layouts.master')
+
+@section('content')
+    <div class="card p-4">
+        <a href="{{ url()->previous() }}" class="btn btn-dark mb-4" style="width: fit-content">
+            <i class="fa-solid fa-arrow-left me-2"></i> Back
+        </a>
+        <h3 class="text-black fw-bold">Add Kategori Bahan Baku</h3>
+        <form action="{{ route('kategoribahanbaku.store') }}" method="post">
+            @csrf
+            <label for="">Jenis Bahan Baku</label>
+            <input type="text" name="jenis_bahan_baku" class="form-control mb-3">
+            <div class="text-end">
+                <button type="submit" class="btn btn-dark">Save</button>
+            </div>
+        </form>
+    </div>
+@endsection
